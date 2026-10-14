@@ -16,9 +16,9 @@ Supported systems: `x86_64-linux` and `aarch64-linux`. You need a nixpkgs recent
 ## Try it
 
 ```sh
-nix run github:diamondmyr/figcraft-flake                       # desktop app
-nix run github:diamondmyr/figcraft-flake#figcraft-server       # collaboration server
-nix build github:diamondmyr/figcraft-flake                     # just build it
+nix run github:NAXLAB/figcraft-flake                       # desktop app
+nix run github:NAXLAB/figcraft-flake#figcraft-server       # collaboration server
+nix build github:NAXLAB/figcraft-flake                     # just build it
 ```
 
 The first build compiles the whole Rust workspace, so give it a few minutes.
@@ -32,18 +32,18 @@ Add the flake as an input in your system flake and apply the overlay:
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    figcraft-flake = {
-      url = "github:diamondmyr/figcraft-flake";
+    figcraft = {
+      url = "github:NAXLAB/figcraft-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { nixpkgs, figcraft-flake, ... }: {
+  outputs = { nixpkgs, figcraft, ... }: {
     nixosConfigurations.myhost = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
         {
-          nixpkgs.overlays = [ figcraft-flake.overlays.default ];
+          nixpkgs.overlays = [ figcraft.overlays.default ];
           environment.systemPackages = [ pkgs.figcraft ];
         }
       ];
@@ -56,7 +56,7 @@ Prefer not to use an overlay? Reference the package directly:
 
 ```nix
 environment.systemPackages = [
-  figcraft-flake.packages.${pkgs.stdenv.hostPlatform.system}.default
+  figcraft.packages.${pkgs.stdenv.hostPlatform.system}.default
 ];
 ```
 
