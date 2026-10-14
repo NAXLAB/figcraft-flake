@@ -1,0 +1,14 @@
+# Nix build outputs
+result
+result-*
+
+# direnv
+.direnv/
+.envrc
+
+# Editors and OS
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store

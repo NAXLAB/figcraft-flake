@@ -1,0 +1,61 @@
+{
+  "nodes": {
+    "craft-fonts": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791722036,
+        "narHash": "sha256-mNnDzBcOp1X10dzmiW0iBAkb74QjuzMO4slWudxXCTE=",
+        "owner": "storytold",
+        "repo": "craft-fonts",
+        "rev": "3d9ab3a132ed0eff457e424226a435a901da30d3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "storytold",
+        "repo": "craft-fonts",
+        "type": "github"
+      }
+    },
+    "figcraft": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791954020,
+        "narHash": "sha256-9yhutoo1Ao5K4S/uE7GorXEXBho5mXYL0sU7nlYx0YU=",
+        "owner": "storytold",
+        "repo": "figcraft",
+        "rev": "bcedfeba1079829fd96c3b38077cfcc76e03bb09",
+        "type": "github"
+      },
+      "original": {
+        "owner": "storytold",
+        "repo": "figcraft",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1791734076,
+        "narHash": "sha256-i5qk1kLiit98rRbh1AXmWBNT9QXC/y4l5Wk/u5EdpDQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7fd4004d0511991fff3a0524856a9be09e28c5f0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "craft-fonts": "craft-fonts",
+        "figcraft": "figcraft",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
