@@ -19,11 +19,11 @@
     "figcraft": {
       "flake": false,
       "locked": {
-        "lastModified": 1791954020,
-        "narHash": "sha256-9yhutoo1Ao5K4S/uE7GorXEXBho5mXYL0sU7nlYx0YU=",
+        "lastModified": 1792036398,
+        "narHash": "sha256-4sGa4NyCMVyLaHh/paaHDbijqusUxwYUP5+ZlsNaLT8=",
         "owner": "storytold",
         "repo": "figcraft",
-        "rev": "bcedfeba1079829fd96c3b38077cfcc76e03bb09",
+        "rev": "8482c3e85bc5f2a430e2f3be2826674872f6d084",
         "type": "github"
       },
       "original": {
