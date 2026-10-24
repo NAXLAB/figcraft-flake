@@ -71,7 +71,11 @@
 
           common = {
             inherit version src;
-            cargoLock.lockFile = "${src}/Cargo.lock";
+            cargoLock = {
+              lockFile = ./Cargo.lock;
+              allowBuiltinFetchGit = true;
+            
+            };
             doCheck = false; # the workspace test suite is large; run it upstream
 
             env = {
