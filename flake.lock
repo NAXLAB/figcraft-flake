@@ -3,11 +3,11 @@
     "craft-fonts": {
       "flake": false,
       "locked": {
-        "lastModified": 1792789165,
-        "narHash": "sha256-MDiv4yIViOVFnQ/ZMFQslOi43mS/OyoGRrwOiEoE2lQ=",
+        "lastModified": 1792945793,
+        "narHash": "sha256-5GjvL6EMCtOzK1/XbbzuBJDYpHC4SfBbOpGbPRjeME8=",
         "owner": "storytold",
         "repo": "craft-fonts",
-        "rev": "fff559f5f038112a4135e95c720161d4d0a5b335",
+        "rev": "aced4137c022f1f587624d48e81ec77e1914a9cc",
         "type": "github"
       },
       "original": {
@@ -19,11 +19,11 @@
     "figcraft": {
       "flake": false,
       "locked": {
-        "lastModified": 1792833987,
-        "narHash": "sha256-Voc2rL+fz6SgqxVAbA2+WV5wZPftXs6WeZXTkt5t1jw=",
+        "lastModified": 1792965147,
+        "narHash": "sha256-GKcKalHfvSa00ocb3UOMM65h6i++49/sYH8ohitk1hs=",
         "owner": "storytold",
         "repo": "figcraft",
-        "rev": "10702311f345393ee1d8868c3257679befcfa14d",
+        "rev": "d27061036f9710d86ce39704d1090ebc2c4c8704",
         "type": "github"
       },
       "original": {
